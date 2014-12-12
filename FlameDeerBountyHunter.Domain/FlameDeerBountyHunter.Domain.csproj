@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="Selenium.WebDriver.Extensions">
       <HintPath>..\packages\Selenium.WebDriver.Extensions.0.10\lib\Selenium.WebDriver.Extensions.dll</HintPath>
     </Reference>
