@@ -1,6 +1,5 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
-using Selenium.WebDriver;
 using Selenium.WebDriver.Extensions;
 
 namespace FlameDeerBountyHunter.Domain
