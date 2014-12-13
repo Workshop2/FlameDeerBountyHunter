@@ -1,6 +1,5 @@
 ﻿using FlameDeerBountyHunter.Console.Properties;
 using FlameDeerBountyHunter.Domain;
-using OpenQA.Selenium.Chrome;
 
 namespace FlameDeerBountyHunter.Console
 {
@@ -11,7 +10,7 @@ namespace FlameDeerBountyHunter.Console
             string username = Settings.Default.Username;
             string password = Settings.Default.Password;
 
-            using (var webDriver = new ChromeDriver())
+            using (var webDriver = ChromeDriverFactory.CreateDriver())
             {
                 var loginPage = new LoginPage(webDriver);
                 loginPage.Login(username, password);
